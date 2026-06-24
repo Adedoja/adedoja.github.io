@@ -1,24 +1,51 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-       <link rel="stylesheet" href="style.css">
-<title> Social Media </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-       
 <body>
-       
-       <h1>Connect With Me</h1>
-<ul class="social-links">
-         <button onclick="window.location.href='https://www.linkedin.com/in/aayatullahadeyemi/'">Linkedin 💼</button>
-       <button onclick="window.location.href='https://www.youtube.com/@AayatullahAdeyemi'"> YouTube</button>
-       <button onclick="window.location.href='https://open.spotify.com/show/3yHboQ3YsHz0xFIBslWgKh'"> Podcasts</button>
-       <br>
-        <button onclick="window.location.href='https://www.wattpad.com/user/Princess_pearls/'">Wattpad</button>
-    <br>
-     
-       <button onclick="window.location.href='index.html'">About Me</button>
-       <button onclick="window.location.href='Projects.html'"> About me</button>
-  
-  <button>Pictures of Interesting Things</button>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">aayatullah<span class="dim">@</span>portfolio</a>
+    <div class="nav-links">
+      <a href="index.html">~/about</a>
+      <a href="Projects.html">~/projects</a>
+      <a href="Socials.html" class="active">~/socials</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+  <h1 style="font-size:22px;margin-bottom:8px;">Connect With Me</h1>
+  <p class="section-label" style="margin-top:0;"><span class="prompt">$</span>cat contact.txt</p>
+
+  <div class="social-list">
+    <a class="social-row" href="https://www.linkedin.com/in/aayatullahadeyemi/"><span>LinkedIn</span><span class="arrow">→</span></a>
+    <a class="social-row" href="https://github.com/Adedoja"><span>GitHub</span><span class="arrow">→</span></a>
+    <a class="social-row" href="mailto:adeyemiaayatullah@gmail.com"><span>Email</span><span class="arrow">→</span></a>
+    <a class="social-row" href="https://www.youtube.com/@AayatullahAdeyemi"><span>YouTube</span><span class="arrow">→</span></a>
+    <a class="social-row" href="https://open.spotify.com/show/3yHboQ3YsHz0xFIBslWgKh"><span>Podcasts</span><span class="arrow">→</span></a>
+    <a class="social-row" href="https://www.wattpad.com/user/Princess_pearls/"><span>Wattpad</span><span class="arrow">→</span></a>
+  </div>
+
+  <div class="cta-row" style="margin-top:28px;">
+    <a class="btn" href="index.html">./about-me</a>
+    <a class="btn btn-outline" href="Projects.html">./projects</a>
+  </div>
+
+  <p class="placeholder-note">$ ls photos/ &nbsp;→&nbsp; coming soon</p>
+
+</main>
+
+<footer class="site-footer">built with HTML, CSS &amp; way too much coffee</footer>
+
 </body>
 </html>

@@ -1,31 +1,147 @@
-<!doctype html>
-<html>
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-   </head>
- <body>
- 
+</head>
+<body>
 
-
-  <h1>My Projects</h1>
-  <div class="projects">
-
- <h2>Classroom Finder <span>(in development)</span></h2>
-  <ul>
-<li> Web application that helps students locate available classrooms based on schedule and location inputs</li>
-<li>Designed to improve access to academic spaces and resource efficiency</li> 
-<li> <a href="https://github.com/Adedoja/My-study-Spaces">Feel free to check out</a></li> 
-</ul>
- </div>
-<div class="project">
-<h2>MoodMe – AI Mood Detection Tool</h2>
-  <ul>
-<li>Created a real-time mood detection program using C++ and HTML.</li>
-<li>Focused on user interaction and logic-based sentiment recognition </li>
-  </ul>
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">aayatullah<span class="dim">@</span>portfolio</a>
+    <div class="nav-links">
+      <a href="index.html">~/about</a>
+      <a href="Projects.html" class="active">~/projects</a>
+      <a href="Socials.html">~/socials</a>
+    </div>
   </div>
-    <button onclick="window.location.href='index.html'">About Me</button>
-  <button onclick="window.location.href='Socials.html'">Social Media</button>
-</body>
+</nav>
 
+<main class="container">
+
+  <h1 style="font-size:22px;margin-bottom:20px;">My Projects</h1>
+
+  <p class="section-label"><span class="prompt">$</span>ls software-engineering/</p>
+
+  <div class="project">
+    <div class="project-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="project-name">study_tracker/</span>
+    </div>
+    <div class="project-body">
+      <h2>Classroom &amp; Study Availability Tracker</h2>
+      <ul>
+        <li>Full-stack classroom/study-space availability tracker with a Python &amp; MySQL backend and JavaScript/HTML frontend, replacing manual lookups with real-time database queries.</li>
+        <li>Designed and optimized SQL queries and relational schemas to turn raw scheduling data into accurate, real-time availability for students.</li>
+      </ul>
+      <a class="project-link" href="https://github.com/Adedoja/My-study-Spaces">View on GitHub</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="project-name">postit/</span>
+    </div>
+    <div class="project-body">
+      <h2>PostIt Platform</h2>
+      <ul>
+        <li>Database-driven web app (PHP, MySQL, HTML/CSS) that lets users post used items for others to claim for free.</li>
+        <li>Built secure user authentication, normalized relational schemas, and server-side validation, with full CRUD functionality powering a dynamic PHP backend.</li>
+      </ul>
+      <a class="project-link" href="https://github.com/Adedoja/Postit">View on GitHub</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="project-name">assembler/</span>
+    </div>
+    <div class="project-body">
+      <h2>Two-Pass Assembler</h2>
+      <ul>
+        <li>Implemented a two-pass assembler in C: pass one builds a symbol table to resolve labels and forward references, pass two encodes instructions into binary machine code.</li>
+        <li>Used pointer arithmetic and manual memory management to produce functional binary output directly from assembly source.</li>
+      </ul>
+      <a class="project-link" href="https://github.com/Adedoja/assemblerpass1">Pass 1 on GitHub</a>
+      <a class="project-link" href="https://github.com/Adedoja/assemblerpass2">Pass 2 on GitHub</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="project-name">moodme/</span>
+    </div>
+    <div class="project-body">
+      <h2>MoodMe – AI Mood Detection Tool</h2>
+      <ul>
+        <li>Real-time mood detection program built with C++ and HTML on Replit, analyzing user responses to identify moods through interactive input.</li>
+        <li>Focused on user interaction and logic-based sentiment recognition.</li>
+      </ul>
+      <a class="project-link" href="https://github.com/Adedoja/MazajMe">View on GitHub</a>
+    </div>
+  </div>
+
+  <p class="section-label"><span class="prompt">$</span>ls cybersecurity-research/</p>
+
+  <div class="project">
+    <div class="project-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="project-name">cloud_capstone/</span>
+    </div>
+    <div class="project-body">
+      <h2>Cloud Security &amp; Privacy Capstone</h2>
+      <ul>
+        <li>Designed and ran 15 controlled AWS misconfiguration experiments across IAM, S3, and network configurations to quantify real-world data exposure risk.</li>
+        <li>Produced remediation steps validated against NIST and CIS benchmarks; presented findings to the Dean of Honors and earned research distinction.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="project-name">htb_attck_navigator/</span>
+    </div>
+    <div class="project-body">
+      <h2>Offensive Security Research – Hack The Box</h2>
+      <ul>
+        <li>Compromised 31 Hack The Box machines, exploiting misconfigurations across SSH, FTP, HTTP/HTTPS, and SMB services.</li>
+        <li>Mapped attack techniques, privilege escalation paths, and persistence mechanisms into a personal MITRE ATT&amp;CK knowledge base, and authored Medium write-ups on methodology and defensive controls.</li>
+      </ul>
+      <a class="project-link" href="https://github.com/Adedoja/HTB-ATT-CK-Navigator">HTB ATT&amp;CK Navigator on GitHub</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="project-name">soc_homelab/</span>
+    </div>
+    <div class="project-body">
+      <h2>SOC Homelab – Wazuh SIEM</h2>
+      <ul>
+        <li>Architected a full SIEM pipeline using Wazuh across Kali Linux and Ubuntu nodes, ingesting and correlating logs from simulated attacks.</li>
+        <li>Simulated attacker behavior (port scanning, brute force, lateral movement), then tuned detection rules from the defender side.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <a class="btn" href="index.html">./about-me</a>
+    <a class="btn btn-outline" href="Socials.html">./connect</a>
+  </div>
+
+</main>
+
+<footer class="site-footer">built with HTML, CSS &amp; way too much coffee</footer>
+
+</body>
 </html>

@@ -2,28 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aayatullah Adeyemi's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
- 
-  <h1>Hello World!!</h1>
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">aayatullah<span class="dim">@</span>portfolio</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">~/about</a>
+      <a href="Projects.html">~/projects</a>
+      <a href="Socials.html">~/socials</a>
+    </div>
+  </div>
+</nav>
 
-  <p>Hi, I’m Aayatullah Adeyemi, a computer Science senior at the University of North Florida focused on cybersecurity and software development.
-   I build things, break things (ethically), and care about how systems fail. My work spans security labs, backend projects, databases, and automation, with a strong interest in defensive security, data, and applied AI.
-   I am currently seeking entry-level roles or internships where I can turn technical curiosity into real-world impact.
-    My interests outside of the classroom include activism, debates, and writing.
-    <br><br>
-     <strong>Certifications:</strong> Microsoft Power Platform Fundamentals, Google IT fundamentals
-  </p>
+<main class="container">
 
-  <button onclick="window.location.href='Projects.html'"> Projects</button>
-  <button onclick="window.location.href='Socials.html'">Social Media</button>
-  <button> Pictures of Interesting Things</button>
+  <section class="terminal">
+    <div class="terminal-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-title">guest@aayatullah:~$</span>
+    </div>
+    <div class="terminal-body">
+      <p class="prompt-line"><span class="prompt">$</span>whoami</p>
+      <h1>Aayatullah Adeyemi<span class="cursor"></span></h1>
+
+      <p class="prompt-line"><span class="prompt">$</span>cat about.txt</p>
+      <p class="body-text">
+        Hi, I’m Aayatullah Adeyemi, a Computer Science graduate from the University of North Florida focused on cybersecurity and software development.
+        I build things, break things (ethically), and care about how systems fail. My work spans offensive security research (31 Hack The Box machines, MITRE ATT&amp;CK mapping), AWS cloud security research, a Wazuh SIEM homelab, backend projects, databases, and automation.
+        I'm currently seeking entry-level roles or internships where I can turn technical curiosity into real-world impact. My interests outside of the classroom include activism, debates, and writing.
+      </p>
+
+      <p class="prompt-line"><span class="prompt">$</span>cat certifications.txt</p>
+      <ul class="cert-list">
+        <li>CompTIA Security+ (SY0-701)</li>
+        <li>WiCyS Security Certificate (in progress)</li>
+        <li>Google IT Support Professional Certificate</li>
+        <li>Microsoft Power Platform Fundamentals</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="cta-row">
+    <a class="btn" href="Projects.html">./view-projects</a>
+    <a class="btn btn-outline" href="Socials.html">./connect</a>
+  </div>
+
+  <p class="placeholder-note">$ ls photos/ &nbsp;→&nbsp; coming soon</p>
+
+</main>
+
+<footer class="site-footer">built with HTML, CSS &amp; way too much coffee</footer>
 
 </body>
 </html>
-
-
-
